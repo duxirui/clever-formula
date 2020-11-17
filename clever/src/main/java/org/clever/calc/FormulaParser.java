@@ -64,7 +64,7 @@ class FormulaParser {
                     for (int i = 1; i <= max; i++) {
                         element.append(formula.charAt(index + i));
                     }
-                    if (Boolean.TRUE.toString().equalsIgnoreCase(element.toString())) {
+                    if (Boolean.TRUE.toString().equalsIgnoreCase(element.toString()) || Boolean.FALSE.toString().equalsIgnoreCase(element.toString())) {
                         index += max;
                     } else {
                         throw new FormulaParserException("Illegal characters in formula:" + c);
@@ -196,6 +196,7 @@ class FormulaParser {
             }
             return elements;
         } catch (Exception e) {
+            e.printStackTrace();
             throw new FormulaParserException("The expression is wrong, please use the correct expression");
         }
     }

@@ -8,8 +8,6 @@
 // * Description： 时间处理工具类
 // * User: 杜涛
 // * Date: Created in 2020/9/25 16:48
-// * Company: 杭州传化智能制造有限公司
-// * Copyright: Copyright (c) 2019
 // * Version: 1.0.0
 // * Modified By:
 // */

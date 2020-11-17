@@ -37,19 +37,18 @@ public enum Function {
     SMALL("small", MathFunction.class),
     SQRT("sqrt", MathFunction.class),
     SUM("sum", MathFunction.class),
-    SUMPRODUCT("sumproduct", MathFunction.class);
+    SUMPRODUCT("sumproduct", MathFunction.class),
 
-//    /**
-//     * 逻辑函数
-//     */
-//    AND("and", "如果所有参数都为真，AND函数返回布尔值true，否则返回布尔值 false", LogicFunction.class, OperatorType.LOGIC),
-//    FALSE("getFalse", "FALSE函数返回布尔值false", LogicFunction.class, OperatorType.LOGIC),
-//    IF("inCase", "IF函数判断一个条件能否满足；如果满足返回一个值，如果不满足则返回另外一个值", LogicFunction.class, OperatorType.LOGIC),
-//    //    IFS("inCases", "IFS函数检查是否满足一个或多个条件，且返回符合第一个TRUE条件的值，IFS可以取代多个嵌套IF语句。", LogicFunction.class),
-//    NOT("not", "NOT函数返回与指定表达式相反的布尔值", LogicFunction.class, OperatorType.LOGIC),
-//    OR("or", "如果任意参数为真，OR 函数返回布尔值true；如果所有参数为假，返回布尔值false。", LogicFunction.class, OperatorType.LOGIC),
-//    TRUE("getTrue", "TRUE函数返回布尔值true", LogicFunction.class, OperatorType.LOGIC),
-//    XOR("xor", "XOR函数可以返回所有参数的异或值", LogicFunction.class, OperatorType.LOGIC),
+    /**
+     * 逻辑函数
+     */
+    AND("and", LogicFunction.class),
+    FALSE("getFalse", LogicFunction.class),
+    IF("inCase", LogicFunction.class),
+    NOT("not", LogicFunction.class),
+    OR("or", LogicFunction.class),
+    TRUE("getTrue", LogicFunction.class),
+    XOR("xor", LogicFunction.class);
 //
 //    /**
 //     * 时间函数
